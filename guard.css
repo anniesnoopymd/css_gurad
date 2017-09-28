@@ -1,0 +1,126 @@
+.guard {
+  padding: 100px;
+}
+
+.hat {
+  height: 230px;
+  width: 130px;
+  border-radius: 80px;
+  background-color: #000;
+  position: absolute;
+  z-index: 0;
+}
+
+.cloth {
+  background-color: #f24;
+  height: 160px;
+  width: 130px;
+  margin-top: 200px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.face {
+  background-color: #ffdbbf;
+  height: 60px;
+  width: 100px;
+  margin-top: 140px;
+  margin-left: 15px;
+  border-radius: 5px 5px 80px 80px;
+  box-shadow: 0px 11px 0px #FCF594;
+  position: absolute;
+}
+
+.eyes {
+  background-color: #000;
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.eyes_div {
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+.mouth {
+  width: 37px;
+  height: 15px;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin-top: 8px;
+  background-color: #FF768D;
+  animation: mouthmove 0.5s infinite alternate;
+}
+
+.tongue {
+  background-color: #fff;
+  width: 20px;
+  height: 7px;
+  margin-left: 8px;
+  border-radius: 20px 20px 70px 70px;
+}
+
+.hand {
+  background-color: #ffdbbf;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: -120px;
+  margin-left: -40px;
+  position: absolute;
+  z-index: 1;
+  animation: hand 0.5s infinite alternate;
+}
+
+.stick {
+  height: 250px;
+  width: 15px;
+  border-radius: 15px;
+  background-color: #000;
+  position: absolute;
+  z-index: 0;
+  margin-top: -250px;
+  margin-left: -25px;
+  animation: stick 0.5s infinite alternate;
+}
+
+.button1, .button2, .button3 {
+  background-color: #FCF594;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  margin: 13px;
+}
+
+.button {
+  margin-left: 40px;
+  padding-top: 30px;
+}
+
+@keyframes mouthmove {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes hand {
+  0% {
+    margin-top: -120px;
+  }
+  100% {
+    margin-top: -140px;
+  }
+}
+@keyframes stick {
+  0% {
+    margin-top: -250px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
